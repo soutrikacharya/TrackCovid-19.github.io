@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:600,700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.nav_style {
+  background-color: #e019b2 !important;
+}
+
+.nav_style a {
+  color: #ffffff;
+}
+
+.main_header {
+  height: 450px;
+  width: 100%;
+}
+
+.logo {
+  width: 50% !important;
+}
+
+.rightside h1 {
+  font-size: 3rem;
+}
+
+.update {
+  font-weight: 900;
+}
+
+/* !Animation */
+
+.rotate img {
+  animation: orotate 3s linear infinite;
+}
+
+@keyframes orotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  animation: unity 5s linear infinite;
+}
+
+@keyframes unity {
+  0% {
+    transform: scale(.75);
+  }
+  20% {
+    transform: scale(1.25);
+  }
+  40% {
+    transform: scale(.75);
+  }
+  60% {
+    transform: scale(1.25);
+  }
+  80% {
+    transform: scale(.75);
+  }
+  100% {
+    transform: scale(.75);
+  }
+}
+
+/* Corona Update */
+
+.corona_update {
+  margin: 0 0 30px 0;
+}
+
+.corona_update h3 {
+  color: #ff7675;
+}
+
+.corona_update h4 {
+  color: #ff7675;
+}
+
+.corona_update h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* About */
+
+.sub-section {
+  background-color: #f1f2f6;
+}
+
+.prevention_info {
+  margin-top: 5px;
+  padding: 5px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Footer */
+
+.footer_style {
+  background-color: #e019b2 !important;
+}
+
+.footer_style h6 {
+  margin-bottom: 0 !important;
+  font-size: 18px;
+  letter-spacing: 0.4rem;
+}
+
+.pm{
+  letter-spacing: 0.4rem;
+  font-size: 15px;
+}
+
+.pm1{
+  font-size: 17px;
+}
+
+.share{
+  letter-spacing: 0.5em;
+  font-size: 27.5px;
+}
+
+.fb{
+  letter-spacing: 0.5em;
+  font-size: 27.5px;
+  color: #3b5998;
+}
+
+.tw{
+  letter-spacing: 0.5em;
+  font-size: 27.5px;
+  color: #00acee;
+}
+
+.insta{
+  letter-spacing: 0.5em;
+  font-size: 27.5px;
+  color: #3f729b;
+}
+
+.lin{
+  letter-spacing: 0.5em;
+  font-size: 27.5px;
+  color: #0e76a8;
+}
+
+/* Scroll Arrow */
+
+#myBtn {
+  position: fixed;
+  right: 40px;
+  bottom: 25px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #00a8ff;
+  color: white;
+  cursor: pointer;
+  height: 35px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#myBtn:hover {
+  background: #0a196e;
+}
+
+/* !Responsive */
+
+@media (max-width: 920px) {
+  .count_style {
+    display: flex;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 820px) {
+  .count_style {
+    display: flex;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_header {
+    height: 700px;
+    text-align: center;
+  }
+  .main_header h1 {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    font-size: 28px;
+  }
+  .count_style {
+    display: inline !important;
+  }
+  .count_style p {
+    text-align: center;
+  }
+  .update_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about_corona h2 {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .about_corona p {
+    font-size: 15px;
+  }
+  .prevent_corona h1 {
+    font-size: 24px;
+  }
+}
+
+#previd{
+  background-color: #f1f2f6;
+}
+
+/* Preloading */
+
+.loader_bg{
+  position: fixed;
+  z-index: 99999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.loader{
+  border : 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+
+.loader:before, .loader:after{
+  content: '';
+  border: 1em solid #ff5733;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+
+.loader:before{
+  animation-delay: .5s;
+}
+
+@keyframes loader{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 0;
+  }
+}
