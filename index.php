@@ -334,7 +334,6 @@
              <div class="footer_style container-fluid">
 
                 <h6 class="text-white"> <i class="fa fa-copyright fa-1.5x text-black"></i><a href="https://github.com/soutrikacharya" target="_blank" class="text-white"> SOUTRIK ACHARYA </a></h6>
-                <h5 class="pm">Special Thanks to   <span><a href="https://www.github.com/pratikmishra356" target="_blank" class="pm1 text-white"> Pratik Mishra </a></span></h5>
                 <p></p>
             </div>
 
